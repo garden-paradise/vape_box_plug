@@ -1,0 +1,140 @@
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  font-weight: normal;
+}
+
+html {
+  font-size: 16px;
+  background: #d4d4d4;
+}
+.body {
+  color: rgba(60, 64, 67, 1);
+  font-family: 'Aeroport';
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 72px 0 68px;
+  padding-top: 49px;
+}
+.header_tel {
+  display: flex;
+  flex-direction: column;
+}
+.main {
+  display: flex;
+  flex: auto;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  margin-top: 100px;
+}
+.addres {
+  color: rgba(60, 64, 67, 1);
+  text-decoration: none;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+.addres:first-child {
+  margin-bottom: 5px;
+}
+.subtitle {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 45px;
+}
+.section2 {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 250px 250px;
+  grid-template-rows: 150px 150px;
+  grid-gap: 20px 50px;
+  justify-content: center;
+}
+
+.section2_block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: white;
+  opacity: 0.8;
+  backdrop-filter: blur(60px);
+  border-radius: 20px;
+  box-shadow: 2px 2px 30px 0px rgba(0, 0, 0, 0.2);
+}
+.section2_block_tit {
+  font-size: 18px;
+  font-weight: 400;
+}
+.section2_block_date {
+  font-size: 22px;
+  font-weight: 700;
+}
+.section2_block_add {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+@media (max-width: 1700px) {
+  html {
+    height: auto;
+  }
+}
+@media (max-width: 650px) {
+  .section2 {
+    grid-template-columns: repeat(auto-fill, 250px);
+    grid-template-rows: 150px;
+  }
+  .section2_block {
+    height: 150px;
+  }
+}
+@media (max-width: 480px) {
+  html {
+    height: auto;
+  }
+  .header {
+    margin: 30px 16px 0;
+    padding: 0;
+  }
+  .header_logo {
+    width: 150px;
+  }
+  .title {
+    font-size: 50px;
+    margin: 0 20px 22px;
+  }
+  .subtitle {
+    margin: 0 16px 45px;
+  }
+  .addres {
+    font-size: 14px;
+  }
+}
+
+@font-face {
+  font-family: 'Aeroport';
+  src: url(./fonts/Aeroport.ttf);
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
